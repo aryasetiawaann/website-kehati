@@ -1,0 +1,13 @@
+.header {
+  overflow: hidden;
+}
+
+.header-title {
+  color: #0173c9;
+  text-align: center;
+  font-family: var(--font-black);
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 175%; /* 175% */
+}
