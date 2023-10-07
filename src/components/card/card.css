@@ -1,0 +1,38 @@
+.card {
+    padding: 50px 30px 50px 30px;
+    height: max-content;
+    /* width: 30%; */
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+}
+
+.card-icon img{
+    width: 30px;
+    height: 30px;
+}
+
+.card-title h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+
+.card-content p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #4D4D4D;
+    /* line-height: 14px; */
+}
+
+.card-link .button{
+    color: #3073F5;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.card-link svg {
+    width: 15px;
+}

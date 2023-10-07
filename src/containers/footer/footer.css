@@ -1,0 +1,54 @@
+.footer {
+  background-color: #a8ffff;
+  display: flex;
+  gap: 60px;
+}
+
+.footer-hashtag {
+  padding-top: 70px;
+  padding-left: 100px;
+}
+
+.footer-hashtag h5 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.footer-hashtag h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.footer-image {
+  width: 600px;
+  margin-top: 60px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-info {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-contact {
+  width: 40%;
+}
+
+.footer-contact p {
+  margin-top: 15px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-copyright {
+  margin-top: 60px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Navbar } from "./components";
+import { Navbar, Card } from "./components";
 import { Header, About, Proses, Target, Footer } from "./containers";
 import "./App.css";
 
@@ -15,6 +15,7 @@ const App = () => {
       <Proses />
       <Target />
       <Footer />
+      <Card />
     </div>
   );
 };

@@ -1,0 +1,60 @@
+.process {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #37b7ff;
+    padding: 60px;
+    position: relative;
+  }
+  
+  .process-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .process-title {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+  }
+  
+  .process-description {
+      font-size: 15px;
+      font-weight: lighter;
+      color: white;
+      margin-top: 15px;
+  }
+  
+  /* CARD SECTION START */
+  .report {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  /* CARD SECTION END */
+  
+  
+  .bubble-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .bubble-container img {
+      width: 300px;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+      .report {
+          flex-wrap: wrap;
+        }
+  }

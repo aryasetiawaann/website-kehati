@@ -1,0 +1,162 @@
+.about {
+  background: linear-gradient(180deg, rgba(11, 117, 177, 1) 0%, rgba(55, 183, 255, 1) 100%);
+  height: max-content;
+  display: flex;
+  padding: 60px;
+  width: 100%;
+}
+
+/* LEFT SECTION START */
+.about-left {
+  width: 50%;
+}
+
+.about-title {
+  color: white;
+  font-size: 15px;
+}
+
+.about-colaboration {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* INSTANTION LOGO START */
+.about-instantion {
+  background-color: white;
+  display: flex;
+  gap: 8px;
+  width: max-content;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.instantion-logo {
+  width: 30px;
+  height: 30px;
+}
+/* INSTANTION LOGO END */
+
+.about-turtle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 30px;
+  margin-right: 60px;
+  position: relative;
+  height: 150px;
+}
+
+.about-turtle img {
+  width: 180px;
+}
+
+.about-card {
+  color: white;
+  position: absolute;
+  font-size: 12px;
+  z-index: 1;
+  margin-top: 90px;
+  bottom: 10;
+}
+/* LEFT SECTION END */
+
+/* RIGHT SECTION START */
+.about-right {
+  width: 50%;
+}
+
+.about-description {
+  color: white;
+  font-size: 15px;
+}
+
+/* SUB SECTION START */
+.about-feature {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.about-feature img {
+  width: 25px;
+  height: 25px;
+}
+
+.feature1,
+.feature2 {
+  display: flex;
+  gap: 15px;
+}
+
+.feature1-content h3,
+.feature2-content h3 {
+  margin-left: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.feature1-content p,
+.feature2-content p {
+  margin-left: 10px;
+  font-size: 15px;
+  color: white;
+  margin-top: 15px;
+}
+/* RIGHT SECTION END */
+
+@media (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+  }
+
+  .about-left {
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 16px;
+  }
+
+  .about-colaboration {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+
+  .about-instantion {
+    gap: 12px;
+    padding: 8px 30px 8px 30px;
+    margin: 15px auto 15px auto;
+  }
+
+  .instantion-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-right {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .about-feature {
+    flex-direction: column;
+  }
+
+  .feature2 {
+    margin-top: 20px;
+  }
+
+  .feature1-content h3,
+  .feature2-content h3 {
+    font-size: 20px;
+  }
+
+  .about-turtle {
+    display: none;
+  }
+}
