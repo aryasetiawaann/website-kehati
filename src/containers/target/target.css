@@ -1,7 +1,7 @@
 .target {
   background-color: #37b7ff;
   position: relative;
-  height: 880px;
+  height: 1100px;
 }
 
 .target-header {
@@ -25,14 +25,19 @@
 }
 
 .target-bubble {
-  position: absolute;
   top: 0;
-  right: 0;
+  margin-left: 140vh;
   z-index: 0;
 }
 
 .target-bubble img {
   width: 500px;
+}
+
+.target-card {
+  display: flex;
+  background-color: black;
+  gap: 16px;
 }
 
 #target-card {
@@ -41,18 +46,17 @@
 
 .swiper-padding {
   padding-left: 50px;
+  display: flex;
+  gap: 10px;
 }
 
-.swiper {
-  height: 100%;
-  width: 100%;
-}
 
 .swiper-slide {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 20px;
+  /* justify-content: center; */
   max-width: fit-content;
+  background-color: black;
 }
 
 .swiper-button {
@@ -80,10 +84,11 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  cursor: pointer;
 }
 
 .coral {
-  width: 900px;
+  width: 1200px;
   bottom: 0;
   left: 0;
 }
@@ -91,6 +96,7 @@
 .coral2 {
   bottom: 0;
   right: 0;
+  width:100%;
 }
 
 .karang img {
@@ -98,7 +104,7 @@
   z-index: 0;
 }
 
-.karang .minicard {
+.karang .button {
   position: absolute;
   bottom: 50px;
   right: 250px;
@@ -106,15 +112,15 @@
 
 .bintang img {
   position: absolute;
-  bottom: 0px;
+  margin-top: 110vh;
   left: 200px;
   z-index: 0;
   width: 200px;
 }
 
-.bintang .minicard {
+.bintang .button {
   position: absolute;
-  bottom: 70px;
+  margin-top: 115vh;
   left: 320px;
 }
 

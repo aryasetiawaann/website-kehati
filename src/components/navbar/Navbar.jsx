@@ -3,7 +3,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar" id="navbar">
       <div className="navbar-brand">
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="76" height="21" viewBox="0 0 76 21" fill="none">

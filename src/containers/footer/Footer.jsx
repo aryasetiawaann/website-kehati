@@ -1,5 +1,9 @@
-import React from 'react';
-import './footer.css';
+import React from "react";
+import "./footer.css";
+
+import Karang from "../../assets/footer/coral.png";
+import Turtle from "../../assets/footer/image 30.png";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -12,7 +16,10 @@ const Footer = () => {
         </div>
 
         <div className="footer-image">
-          <img src="./assets/section5/Karang.png" alt="" srcset="" />
+          <img src={Karang} alt="" srcset="" />
+          <div className="footer-turtle">
+            <img src={Turtle} alt="" />
+          </div>
         </div>
       </div>
       {/* LEFT SECTION END */}
@@ -24,7 +31,13 @@ const Footer = () => {
           <div className="footer-contact">
             <h5>Hubungi kami melalui:</h5>
             <h5>
-              Email: <u>info@kehati.go.id</u>
+              Email:{" "}
+              <a href="#">
+                <u>
+                  info@kehati.go.id
+                  <BsArrowUpRight style={{ marginLeft: "2px" }} />
+                </u>
+              </a>
             </h5>
             <p>Berikan masukan dan saran ataupun pertanyaan terkait Kehati untuk pengembangan platform yang lebih baik</p>
           </div>
@@ -32,9 +45,15 @@ const Footer = () => {
 
           {/* SUB SECTION 2 START */}
           <div className="footer-menu">
-            <h5>Tentang Kami</h5>
-            <h5>Data dan Informasi</h5>
-            <h5>Metode Pengkajian</h5>
+            <h5>
+              <a href="#navbar">Tentang Kami</a>
+            </h5>
+            <h5>
+              <a href="#">Data dan Informasi</a>
+            </h5>
+            <h5>
+              <a href="#">Metode Pengkajian</a>
+            </h5>
           </div>
           {/* SUB SECTION 2 END */}
         </div>

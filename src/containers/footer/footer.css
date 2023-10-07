@@ -10,29 +10,52 @@
 }
 
 .footer-hashtag h5 {
-  font-size: 15px;
-  font-weight: lighter;
+  color: #1e1e1e;
+  font-family: var(--font-footer);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
 }
 
 .footer-hashtag h1 {
-  font-size: 40px;
-  font-weight: bolder;
+  color: #1e1e1e;
+  font-size: 48px;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px; 
+  font-family: var(--font-footer);
 }
 
 .footer-image {
-  width: 600px;
-  margin-top: 60px;
+  display: flex;
+  width: 800px;
+  margin-top: 65px;
+  margin-bottom: -5px;
+  position: relative;
+}
+
+.footer-turtle {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 20px;
 }
 
 .footer-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 200px;
 }
 
 .footer-info {
   display: flex;
   gap: 80px;
+  font-size: 18px;
 }
 
 .footer-contact {

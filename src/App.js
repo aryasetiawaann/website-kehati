@@ -1,21 +1,20 @@
 import React from "react";
 
-import { Navbar, Card } from "./components";
+import { Card } from "./components";
 import { Header, About, Proses, Target, Footer } from "./containers";
+import { Parallax } from "@react-spring/parallax";
 import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
-      <div className="App-header">
-        <Navbar />
+      <Parallax pages={"auto"}>
         <Header />
-      </div>
-      <About />
-      <Proses />
-      <Target />
-      <Footer />
-      <Card />
+        <About />
+        <Proses />
+        <Target />
+        <Footer />
+      </Parallax>
     </div>
   );
 };

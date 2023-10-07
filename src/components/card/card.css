@@ -1,38 +1,52 @@
 .card {
-    padding: 50px 30px 50px 30px;
-    height: max-content;
-    /* width: 30%; */
-    border-radius: 15px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+  padding: 50px 30px 50px 30px;
+  height: 414px;
+  max-width: 28%;
+  border-radius: 15px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
 }
 
-.card-icon img{
-    width: 30px;
-    height: 30px;
+.card-icon img {
+  width: 30px;
+  height: 30px;
 }
 
 .card-title h3 {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #4D4D4D;
+  font-family: var(--font-bold);
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4d4d4d;
 }
 
 .card-content p {
-    margin-top: 10px;
-    font-size: 15px;
-    color: #4D4D4D;
-    /* line-height: 14px; */
+  margin-top: 10px;
+  font-size: 15px;
+  color: #4d4d4d;
+  /* line-height: 14px; */
 }
 
-.card-link .button{
-    color: #3073F5;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    font-size: 15px;
+.card-link .button {
+  color: #3073f5;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 15px;
 }
 
-.card-link svg {
-    width: 15px;
+.card-button {
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  color: var(--primary-color);
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+  padding: 2px 13px 2px 0;
+  gap: 15px;
+  position: relative;
+  z-index: 999;
+  width: max-content;
+  height: 55px;
+  cursor: pointer;
 }

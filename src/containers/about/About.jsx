@@ -1,6 +1,17 @@
 import React from "react";
 import "./about.css";
 import { Button } from "../../components";
+import Logo1 from "../../assets/about/Logo Partner.png";
+import Logo2 from "../../assets/about/Logo Partner-1.png";
+import Logo3 from "../../assets/about/Logo Partner-2.png";
+import Logo4 from "../../assets/about/Logo Partner-3.png";
+import Logo5 from "../../assets/about/Logo Partner-4.png";
+import Logo6 from "../../assets/about/Logo Partner-5.png";
+import Logo7 from "../../assets/about/image 5.png";
+import turtle from "../../assets/about/image 30.png";
+import icon1 from "../../assets/about/icon1.png";
+import icon2 from "../../assets/about/icon2.png";
+import { ParallaxLayer } from "@react-spring/parallax";
 
 const About = () => {
   return (
@@ -14,21 +25,22 @@ const About = () => {
           </div>
 
           <div className="about-instantion">
-            <img className="instantion-logo" src="../assets/logo/logo Partner.png" alt="mamang" />
-            <img className="instantion-logo" src="../assets/logo/logo Partner-1.png" alt="mamang" />
-            <img className="instantion-logo" src="../assets/logo/logo Partner-2.png" alt="mamang" />
-            <img className="instantion-logo" src="../assets/logo/logo Partner-3.png" alt="mamang" />
-            <img className="instantion-logo" src="../assets/logo/logo Partner-4.png" alt="mamang" />
-            <img className="instantion-logo" src="../assets/logo/logo Partner-5.png" alt="mamang" />
-            <img className="instantion-logo" src="../assets/logo/image 5.png" alt="mamang" />
+            <img className="instantion-logo" src={Logo1} alt="logo" />
+            <img className="instantion-logo" src={Logo2} alt="logo" />
+            <img className="instantion-logo" src={Logo3} alt="logo" />
+            <img className="instantion-logo" src={Logo4} alt="logo" />
+            <img className="instantion-logo" src={Logo5} alt="logo" />
+            <img className="instantion-logo" src={Logo6} alt="logo" />
+            <img className="instantion-logo" src={Logo7} alt="logo" />
           </div>
-
-          <div className="about-turtle">
-            <img src="../assets/section1/Kura.png" alt="turtle" />
-            <div className="about-card">
-              <Button title="Penyu Hijau" scientific="Chelonia Midas" />
+          <ParallaxLayer offset={0} speed={-0.05} horizontal style={{ maxHeight: "100vh" }}>
+            <div className="about-turtle">
+              <img src={turtle} alt="turtle" />
+              <div className="about-card">
+                <Button title="Penyu Hijau" scientific="Chelonia Midas" />
+              </div>
             </div>
-          </div>
+          </ParallaxLayer>
         </div>
         {/* LEFT SECTION END */}
 
@@ -44,7 +56,7 @@ const About = () => {
           <div className="about-feature">
             {/* SUB SECTION 1 START */}
             <div className="feature1">
-              <img src="../assets/section1/Group (4).png" alt="icon" />
+              <img src={icon1} alt="icon" />
               <div className="feature1-content">
                 <h3>
                   <b>Pantau Aksi Pengelolaan Kehati</b>
@@ -56,7 +68,7 @@ const About = () => {
 
             {/* SUB SECTION 2 START */}
             <div className="feature2">
-              <img src="../assets/section1/Group (4).png" alt="icon" />
+              <img src={icon2} alt="icon" />
               <div className="feature2-content">
                 <h3>
                   <b>Pantau Indeks Pengelolaan Kehati</b>

@@ -1,8 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import './target.css';
-import {Card, Button} from '../../components/';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import "./target.css";
+import { Card, Button } from "../../components/";
+import { Swiper, SwiperSlide } from "swiper/react";
+import axios from "axios";
+
+import Bubble from "../../assets/target/Bubble.png";
+import Coral from "../../assets/target/coral1.png";
+import Coral2 from "../../assets/target/coral2.png";
+import Starfish from "../../assets/target/binlaut.png";
+import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io";
+import { ParallaxLayer } from "@react-spring/parallax";
 
 const Target = () => {
   const [data, setData] = useState([]);
@@ -10,10 +17,10 @@ const Target = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/target.json'); // LINK API
+        const response = await axios.get("/target.json"); // LINK API
         setData(response.data);
       } catch (error) {
-        console.error('Error fetching data: ', error);
+        console.error("Error fetching data: ", error);
       }
     };
 
@@ -23,9 +30,11 @@ const Target = () => {
   return (
     <div className="target">
       {/* BACKGROUND IMAGE */}
-      <div className="target-bubble">
-        <img src="./assets/section4/Bubble.png" alt="" />
-      </div>
+      <ParallaxLayer offset={0} speed={-0.05} horizontal style={{ maxHeight: "100vh" }}>
+        <div className="target-bubble">
+          <img src={Bubble} alt="" />
+        </div>
+      </ParallaxLayer>
 
       <div className="target-header">
         <h1>Sasaran Pengguna</h1>
@@ -33,26 +42,24 @@ const Target = () => {
       </div>
 
       {/* CARD SECTION START */}
-      <div className="swiper-card">
-        <div className='swiper-padding'>
-          <Swiper className="mySwiper" slidesPerView={'auto'} spaceBetween={30} grabCursor={true} freeMode={true} navigation={true}>
-            <div className="target-card">
-              {data.map((item, index) => (
-                <SwiperSlide>
-                  <Card id="target-card" key={index} title={item.title} content={item.content} url={item.url} imgUrl={item.imgUrl} />
-                </SwiperSlide>
-              ))}
-            </div>
-          </Swiper>
+      <div>
+        <div className="swiper-padding">
+          {/* <Swiper className="mySwiper" slidesPerView={4.5} spaceBetween={30} grabCursor={true} freeMode={true}>
+            <SwiperSlide> */}
+          {data.map((item, index) => (
+            <Card id="target-card" key={index} title={item.title} content={item.content} url={item.url} imgUrl={item.imgUrl} />
+          ))}
+          {/* </SwiperSlide>
+          </Swiper> */}
         </div>
 
         <div className="swiper-button">
           <div className="button-arrow">
-            <img className="arrow-left-line-icon" alt="" src="./assets/section4/Arrow-Left.svg" />
+            <IoMdArrowBack style={{ color: "white" }} />
           </div>
 
           <div className="button-arrow">
-            <img className="arrow-right-line-icon" alt="" src="./assets/section4/Arrow-Right.svg" />
+            <IoMdArrowForward style={{ color: "white" }} />
           </div>
         </div>
       </div>
@@ -60,15 +67,17 @@ const Target = () => {
 
       {/* BACKGROUNG IMAGE */}
       <div className="karang">
-        <img className="coral" src="./assets/section4/Coral.png" alt="" />
-        <img className="coral2" src="./assets/section4/Coral2.png" alt="www" />
-        <Button title="Bintang Laut" scientific="Linckia laevigata" />
+        <img className="coral" src={Coral} alt="" />
+        <img className="coral2" src={Coral2} alt="www" />
+          <Button title="Taman Nasional Bunaken" scientific="Sulawesi Utara" />
       </div>
 
-      <div className="bintang">
-        <img src="./assets/section4/Bintang.png" alt="" />
+      <ParallaxLayer offset={0} speed={0.05} style={{ maxHeight: "100vh" }}>
+        <div className="bintang">
+          <img src={Starfish} alt="starfish" />
         <Button title="Bintang Laut" scientific="Linckia laevigata" />
-      </div>
+        </div>
+      </ParallaxLayer>
       <div className="target-gradient"></div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import "./button.css";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const Button = ({ title, scientific }) => {
   return (
@@ -11,7 +12,8 @@ const Button = ({ title, scientific }) => {
 
       <div className="button-content">
         <p>
-          <b>{title}</b>
+          {title}
+          <BsArrowUpRight style={{ marginLeft: "2px" }} />
         </p>
         <p>
           <i>{scientific}</i>

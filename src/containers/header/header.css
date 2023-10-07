@@ -1,5 +1,6 @@
 .header {
-  height: 130vh;
+  background: linear-gradient(180deg, #7ce0ff 0%, #e1efff 53.88%);
+  height: 110vh;
 }
 
 .header-title {
@@ -14,33 +15,49 @@
 }
 
 .cloud1 {
-  margin-top: 9.2%;
-  margin-left: 3%;
-  width: 40%;
+  margin-top: 16%;
+  margin-left: 10%;
+  width: 70%;
 }
 
 .elang-flores {
-  margin-top: 23%;
-  margin-left: 65%;
-  width: 15%;
+  margin-top: 45%;
+  margin-left: 145%;
+  width: 29%;
+}
+
+.button-elang {
+  margin-top: -11.5%;
+  margin-left: 138%;
+  color: white;
 }
 
 .cloud {
-  width: 38%;
+  width: 65%;
   margin-top: 20vh;
   margin-left: 140vh;
 }
 
 .komodo {
-  width: 80%;
+  width: 130%;
   flex-shrink: 0;
-  margin-top: 52vh;
+  margin-top: 53.4vh;
+}
+
+.button-komodo{
+  color: white;
+  margin-top: 78vh;
+  margin-left: 32vh;
+}
+
+.button-bajo{
+  color: white;
+  margin-top: 98vh;
+  margin-left: 160vh;
 }
 
 .gradient {
-  margin-top: 110vh;
-  width: 100%; 
-  height: 20vh;
-  flex-shrink: 0;
-  background: linear-gradient(180deg, rgba(11, 117, 177, 0) 5.77%, #0b75b1 81.59%);
+  margin-top: 43%;
+  height: 26vh;
+  background: linear-gradient(180deg, rgba(11, 117, 177, 0) 5.77%, #0b75b1 90%);
 }
