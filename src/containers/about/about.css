@@ -114,14 +114,54 @@
 }
 /* RIGHT SECTION END */
 
-@media (max-width: 768px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 16px;
+@media screen and (max-width: 1500px) {
+  .about-turtle {
+    margin-top: 140vh;
+    margin-right: 20vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .about-info {
+    width: 450px;
   }
 
   .about-left {
+    height: 390px;
+  }
+
+  .about-colaboration {
+    font-size: 24px;
+  }
+
+  .about-turtle {
+    margin-top: 166vh;
+    margin-left: 40vw;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .about-turtle {
+    margin-left: 0;
+    margin-top: 163vh;
+    margin-right: 45vw;
+  }
+}
+
+@media (max-width: 890px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 16px;
+  }
+
+  .about-left {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 16px;
+  }
+
+  .about-info {
     width: 100%;
   }
 
@@ -136,18 +176,17 @@
 
   .about-instantion {
     gap: 12px;
-    padding: 8px 30px 8px 30px;
-    margin: 15px auto 15px auto;
+    padding: 8px 16px;
+    margin: 16px auto;
   }
 
   .instantion-logo {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 
   .about-right {
     width: 100%;
-    margin-top: 20px;
   }
 
   .about-feature {
@@ -167,3 +206,4 @@
     display: none;
   }
 }
+

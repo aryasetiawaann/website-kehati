@@ -4,7 +4,7 @@
 }
 
 .header-title {
-  margin-top: 10.5%;
+  margin-top: 19vh;
   color: #0173c9;
   text-align: center;
   font-family: var(--font-black);
@@ -15,27 +15,30 @@
 }
 
 .cloud1 {
-  margin-top: 16%;
-  margin-left: 10%;
-  width: 70%;
+  position: absolute;
+  left: 6vw;
+  bottom: 43vh;
 }
 
 .elang-flores {
-  margin-top: 45%;
-  margin-left: 145%;
+  position: relative;
+  top: 25vh;
+  left: 70vw;
   width: 29%;
 }
 
 .button-elang {
-  margin-top: -11.5%;
-  margin-left: 138%;
+  position: relative;
+  top: 13vh;
+  left: 66.5vw;
   color: white;
 }
 
 .cloud {
+  position: absolute;
   width: 65%;
-  margin-top: 20vh;
-  margin-left: 140vh;
+  left: 68vw;
+  bottom: 40vh;
 }
 
 .komodo {
@@ -44,20 +47,302 @@
   margin-top: 53.4vh;
 }
 
-.button-komodo{
+.button-komodo {
   color: white;
   margin-top: 78vh;
-  margin-left: 32vh;
+  margin-left: 18vw;
 }
 
-.button-bajo{
+.button-bajo {
   color: white;
   margin-top: 98vh;
-  margin-left: 160vh;
+  margin-left: 80vw;
 }
 
 .gradient {
-  margin-top: 43%;
+  margin-top: 86.5vh;
   height: 26vh;
   background: linear-gradient(180deg, rgba(11, 117, 177, 0) 5.77%, #0b75b1 90%);
+}
+
+@media screen and (max-width: 1520px) {
+  .header-background {
+    margin-top: -10vh;
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+  .header-title {
+    margin-top: 18vh;
+  }
+
+  .cloud1 {
+    width: 55%;
+    left: 6vw;
+    bottom: 54vh;
+  }
+
+  .elang-flores {
+    top: 16vh;
+    left: 70vw;
+    width: 25%;
+  }
+
+  .button-elang {
+    top: 6vh;
+    left: 65vw;
+  }
+
+  .cloud {
+    width: 50%;
+    bottom: 50vh;
+  }
+
+  .komodo {
+    margin-top: 41.5vh;
+  }
+
+  .button-komodo {
+    margin-top: 65vh;
+    margin-left: 23vw;
+  }
+
+  .button-bajo {
+    margin-top: 80vh;
+  }
+
+  .gradient {
+    margin-top: 86vh;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-title {
+    margin-top: 20vh;
+    font-size: 60px;
+  }
+
+  .cloud1 {
+    width: 50%;
+    left: 1vw;
+  }
+
+  .elang-flores {
+    top: 17vh;
+    left: 70vw;
+    width: 22%;
+  }
+
+  .button-elang {
+    top: 8vh;
+    left: 62vw;
+    z-index: 999;
+  }
+
+  .cloud {
+    width: 35%;
+    left: 73vw;
+    bottom: 53vh;
+  }
+
+  .komodo {
+    margin-top: 48vh;
+    width: 115%;
+  }
+
+  .button-komodo {
+    margin-top: 68vh;
+    margin-left: 23vw;
+  }
+
+  .button-bajo {
+    margin-top: 78vh;
+  }
+
+  .gradient {
+    margin-top: 85.5vh;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .header-background {
+    margin-top: -5vh;
+  }
+
+  .header {
+    height: 105vh;
+  }
+
+  .header-title {
+    margin-top: 15vh;
+  }
+
+  .cloud1 {
+    bottom: 52vh;
+  }
+
+  .elang-flores {
+    top: 19vh;
+    left: 72vw;
+    width: 30%;
+  }
+
+  .button-elang {
+    top: 6vh;
+    left: 66vw;
+  }
+
+  .cloud {
+    width: 50%;
+    bottom: 50vh;
+    left: 71vw;
+  }
+
+  .komodo {
+    width: 120%;
+    margin-top: 50.9vh;
+  }
+
+  .button-komodo {
+    margin-top: 70vh;
+    margin-left: 20vw;
+  }
+
+  .button-bajo {
+    margin-top: 85vh;
+  }
+
+  .gradient {
+    margin-top: 91vh;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-height: 710px) {
+  .header-background {
+    margin-top: 0;
+  }
+
+  .header-title {
+    margin-top: 13vh;
+  }
+
+  .cloud1 {
+    bottom: 51vh;
+  }
+
+  .cloud {
+    width: 55%;
+    bottom: 45vh;
+    left: 76vw;
+  }
+
+  .elang-flores {
+    top: 19vh;
+    left: 72vw;
+    width: 34%;
+  }
+
+  .komodo {
+    width: 130%;
+    margin-top: 51.5vh;
+  }
+
+  .button-komodo {
+    margin-top: 72vh;
+    margin-left: 15vw;
+  }
+
+  .button-bajo {
+    margin-top: 90vh;
+  }
+
+  .gradient {
+    margin-top: 96vh;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .button-elang {
+    top: 7vh;
+    left: 59vw;
+    z-index: 999;
+  }
+
+  .cloud {
+    width: 35%;
+    left: 73vw;
+    bottom: 53vh;
+  }
+
+  .komodo {
+    margin-top: 48vh;
+    width: 115%;
+  }
+
+  .button-komodo {
+    margin-top: 68vh;
+    margin-left: 33vw;
+  }
+
+  .button-bajo {
+    margin-top: 80vh;
+    margin-left: 70vw;
+  }
+
+  .gradient {
+    margin-top: 85.5vh;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .elang-flores-container {
+    display: none;
+  }
+
+  .header {
+    height: 95vh;
+  }
+
+  .header-title {
+    margin-top: 18vh;
+    font-size: 35px;
+  }
+
+  .elang-flores,
+  .button-elang,
+  .cloud,
+  .button-bajo,
+  .button-komodo {
+    display: none;
+  }
+
+  .cloud1 {
+    bottom: 58vh;
+  }
+
+  .komodo {
+    margin-top: 43vh;
+  }
+
+  .gradient {
+    margin-top: 80.2vh;
+  }
+
+  .header-background {
+    margin-top: -15vh;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header-title {
+    margin-top: 19vh;
+    font-size: 30px;
+  }
 }

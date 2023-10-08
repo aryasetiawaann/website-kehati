@@ -18,12 +18,15 @@ const Proses = () => {
 
       {/* CONTENT START */}
       <div className="process-content">
-        <h1 className="process-title">Proses dalam KEHATI</h1>
-        <p className="process-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div className="process-header">
+          <h1 className="process-title">Proses dalam KEHATI</h1>
+          <p className="process-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
 
         {/* CARD SECTION START */}
         <div className="report">
           <Card
+            id="process-card"
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <path
@@ -45,6 +48,7 @@ const Proses = () => {
           />
 
           <Card
+            id="process-card"
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
                 <path
@@ -65,6 +69,7 @@ const Proses = () => {
             content="Modul yang dirancang untuk mengakomodasi proses pemantauan, pengumpulan data, analisis, serta pelaporan kemajuan dan hasil dari berbagai tindakan atau langkah-langkah yang terkait dengan pelestarian lingkungan dan keanekaragaman hayati."
           />
           <Card
+            id="process-card"
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
                 <path

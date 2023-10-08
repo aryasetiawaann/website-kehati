@@ -21,6 +21,15 @@
   color: white;
 }
 
+.process-header {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .process-description {
   font-size: 18px;
   font-weight: lighter;
@@ -31,13 +40,16 @@
 /* CARD SECTION START */
 .report {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 16px;
   margin-top: 48px;
   position: relative;
   z-index: 1;
+}
+
+.report .card {
+  max-width: 28%;
 }
 /* CARD SECTION END */
 
@@ -50,8 +62,47 @@
   width: 335px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1300px){
+
+  .card-title h3{
+    font-size: 20px;
+  }
+
+  .card-content p{
+    font-size: 14px;
+  }
+
+  #process-card {
+    padding-top: 35px;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+  .process {
+    padding: 0px  
+  }
+
+  .process-content {
+  width: 100%;
+}
+
+  .process-title {
+  font-size: 32px;
+}
+
   .report {
     flex-wrap: wrap;
+  }
+
+  .report .card {
+    max-width: 100%;
+    width: 353px;
+    height: fit-content;
+  }
+
+  .bubble-container {
+    display: none;
   }
 }

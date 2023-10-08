@@ -16,10 +16,8 @@ const Footer = () => {
         </div>
 
         <div className="footer-image">
-          <img src={Karang} alt="" srcset="" />
-          <div className="footer-turtle">
-            <img src={Turtle} alt="" />
-          </div>
+          <img className="footer-karang" src={Karang} alt="" srcset="" />
+          <img className="footer-turtle" src={Turtle} alt="" />
         </div>
       </div>
       {/* LEFT SECTION END */}
@@ -43,6 +41,8 @@ const Footer = () => {
           </div>
           {/* SUB SECTION 1 END */}
 
+          <hr />
+
           {/* SUB SECTION 2 START */}
           <div className="footer-menu">
             <h5>
@@ -56,6 +56,8 @@ const Footer = () => {
             </h5>
           </div>
           {/* SUB SECTION 2 END */}
+
+          <hr />
         </div>
 
         <div className="footer-copyright">&copy; 2022 Keanekaragaman Hayati Indonesia</div>

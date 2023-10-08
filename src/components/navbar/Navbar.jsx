@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+  AOS.init({
+    once: true,
+  });
   return (
-    <div className="navbar" id="navbar">
+    <div className="navbar" id="navbar" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="700">
       <div className="navbar-brand">
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="76" height="21" viewBox="0 0 76 21" fill="none">
@@ -34,6 +42,27 @@ const Navbar = () => {
         <button>
           <a href="#">Login</a>
         </button>
+      </div>
+      <div className="navbar-menu">
+        {toggleMenu ? <IoClose size={27} onClick={() => setToggleMenu(false)} /> : <RxHamburgerMenu size={27} onClick={() => setToggleMenu(true)} />}
+        {toggleMenu && (
+          <div className="navbar-menu-container">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Data & Informasi</a>
+              </li>
+              <li>
+                <a href="#">Tentang</a>
+              </li>
+            </ul>
+            <button>
+              <a href="#">Login</a>
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

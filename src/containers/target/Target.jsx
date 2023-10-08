@@ -11,8 +11,18 @@ import Starfish from "../../assets/target/binlaut.png";
 import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io";
 import { ParallaxLayer } from "@react-spring/parallax";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+
+// import required modules
+import { FreeMode, Navigation } from "swiper/modules";
+
 const Target = () => {
   const [data, setData] = useState([]);
+  const [slideView, setSlideView] = useState(6);
+  const windowWidth = window.innerWidth;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,7 +34,23 @@ const Target = () => {
       }
     };
 
+    const updateSize = () => {
+      if (windowWidth <= 1300) {
+        setSlideView(3.5);
+      } else if (windowWidth <= 1500) {
+        setSlideView(4.5);
+      } else {
+        setSlideView(6);
+      }
+    };
+
     fetchData();
+
+    window.addEventListener("resize", updateSize);
+
+    return () => {
+      window.removeEventListener("resize", updateSize);
+    };
   }, []);
 
   return (
@@ -42,23 +68,51 @@ const Target = () => {
       </div>
 
       {/* CARD SECTION START */}
-      <div>
-        <div className="swiper-padding">
-          {/* <Swiper className="mySwiper" slidesPerView={4.5} spaceBetween={30} grabCursor={true} freeMode={true}>
-            <SwiperSlide> */}
-          {data.map((item, index) => (
-            <Card id="target-card" key={index} title={item.title} content={item.content} url={item.url} imgUrl={item.imgUrl} />
-          ))}
-          {/* </SwiperSlide>
-          </Swiper> */}
+      <div className="swiper-container">
+        <div id="card-mobile">
+          <div className="swiper-padding">
+            {data.map((item, index) => (
+              <Card id="target-card" key={index} title={item.title} content={item.content} url={item.url} icon={item.icon} />
+            ))}
+          </div>
+        </div>
+
+        <div id="card-desktop">
+          <Swiper
+            freeMode={true}
+            modules={[FreeMode, Navigation]}
+            navigation={{ nextEl: ".button-arrow-right", prevEl: ".button-arrow-left", clickable: true }}
+            grabCursor={true}
+            className="mySwiper"
+            breakpoints={{
+              900: {
+                slidesPerView: 3.2,
+              },
+
+              1400: {
+                slidesPerView: 4.5,
+              },
+              1500: {
+                slidesPerView: 6,
+              },
+            }}
+          >
+            <div className="swiper-padding">
+              {data.map((item, index) => (
+                <SwiperSlide>
+                  <Card id="target-card" key={index} title={item.title} content={item.content} url={item.url} icon={item.icon} />
+                </SwiperSlide>
+              ))}
+            </div>
+          </Swiper>
         </div>
 
         <div className="swiper-button">
-          <div className="button-arrow">
+          <div className="button-arrow-left">
             <IoMdArrowBack style={{ color: "white" }} />
           </div>
 
-          <div className="button-arrow">
+          <div className="button-arrow-right">
             <IoMdArrowForward style={{ color: "white" }} />
           </div>
         </div>
@@ -69,13 +123,13 @@ const Target = () => {
       <div className="karang">
         <img className="coral" src={Coral} alt="" />
         <img className="coral2" src={Coral2} alt="www" />
-          <Button title="Taman Nasional Bunaken" scientific="Sulawesi Utara" />
+        <Button title="Taman Nasional Bunaken" scientific="Sulawesi Utara" />
       </div>
 
       <ParallaxLayer offset={0} speed={0.05} style={{ maxHeight: "100vh" }}>
         <div className="bintang">
           <img src={Starfish} alt="starfish" />
-        <Button title="Bintang Laut" scientific="Linckia laevigata" />
+          <Button title="Bintang Laut" scientific="Linckia laevigata" />
         </div>
       </ParallaxLayer>
       <div className="target-gradient"></div>

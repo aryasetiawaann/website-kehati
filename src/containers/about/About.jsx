@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
 import { Button } from "../../components";
 import Logo1 from "../../assets/about/Logo Partner.png";
