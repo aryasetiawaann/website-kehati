@@ -62,7 +62,7 @@
 .gradient {
   margin-top: 86.5vh;
   height: 26vh;
-  background: linear-gradient(180deg, rgba(11, 117, 177, 0) 5.77%, #0b75b1 90%);
+  background: linear-gradient(180deg, rgba(11, 117, 177, 0) 5.77%, #0b75b1 81.59%);
 }
 
 @media screen and (max-width: 1520px) {
