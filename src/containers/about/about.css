@@ -3,9 +3,10 @@
   height: max-content;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   padding: 112px 64px;
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 /* LEFT SECTION START */
@@ -46,12 +47,15 @@
 }
 /* INSTANTION LOGO END */
 
+.about-parallax {
+  position: relative;
+}
+
 .about-turtle {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  margin-top: 150vh;
-  margin-right: 50px;
+  margin-right: 200px;
   position: relative;
   height: 150px;
 }
@@ -114,20 +118,27 @@
 }
 /* RIGHT SECTION END */
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1700px) {
   .about-turtle {
-    margin-top: 140vh;
-    margin-right: 20vw;
+    margin-top: 45px;
+    /* margin-right: 150px; */
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
+  .about-turtle {
+    /* margin-top: 100px; */
+    margin-right: 280px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
   .about-info {
     width: 450px;
   }
 
-  .about-left {
-    height: 390px;
+  .about-turtle img {
+    width: 200px;
   }
 
   .about-colaboration {
@@ -135,20 +146,22 @@
   }
 
   .about-turtle {
-    margin-top: 166vh;
-    margin-left: 40vw;
+    margin-right: 350px;
   }
 }
 
 @media screen and (max-width: 1200px){
   .about-turtle {
-    margin-left: 0;
-    margin-top: 163vh;
-    margin-right: 45vw;
+    margin-right: 450px;
+    margin-top: 30px;
+  }
+
+  .about-turtle img {
+    width: 200px;
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1000px) {
   .about {
     display: flex;
     flex-direction: column;

@@ -29,11 +29,11 @@
 }
 
 .button:hover {
-  display: inline-flex;
+  display: inline-flex; 
   height: 55px;
   padding: 2px 13px;
-  align-items: center;
-  gap: 10px;
+  align-items: center; 
+  gap: 10px; 
   background-color: #eb5a35;
 }
 

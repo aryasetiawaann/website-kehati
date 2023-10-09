@@ -4,11 +4,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { ParallaxLayer } from "@react-spring/parallax";
-import Cloud1 from "../../assets/header/Cloud1.png";
-import Island from "../../assets/header/LabuanBajo.png";
-import ElangFlores from "../../assets/header/ElangFlores.png";
-import Cloud from "../../assets/header/Cloud.png";
-import Komodo from "../../assets/header/Komodo.png";
+import Cloud1 from "../../assets/header/Cloud1.webp";
+import Island from "../../assets/header/LabuanBajo.webp";
+import ElangFlores from "../../assets/header/ElangFlores.webp";
+import Cloud from "../../assets/header/Cloud.webp";
+import Komodo from "../../assets/header/Komodo.webp";
 import { Button, Navbar } from "../../components";
 
 const Header = () => {
@@ -20,25 +20,26 @@ const Header = () => {
     <div className="header">
       <Navbar />
 
-      <ParallaxLayer offset={0} speed={0.05} horizontal style={{ maxHeight: "100vh" }}>
+      <ParallaxLayer offset={0} speed={0.05} horizontal style={{ maxHeight: "100dvh"}}>
         <img src={Cloud1} alt="cloud1" className="cloud1" />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={0} speed={0.05} style={{ maxHeight: "50vh" }}>
+      <ParallaxLayer offset={0} speed={0.05} style={{ maxHeight: "100dvh" }}>
         <div data-aos="slide-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
           <p className="header-title">TENTANG APLIKASI</p>
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer
-        offset={0}
-        speed={0}
+      
+      <div
         style={{
           backgroundImage: `url(${Island})`,
           backgroundSize: "cover",
-          backgroundPosition: "center center",
+          backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          height: "110vh",
+          height: "100%",
+          position:"relative",
+          zIndex:"0"
         }}
         className="header-background"
       />
@@ -51,7 +52,7 @@ const Header = () => {
         <div data-aos="fade-up-left" data-aos-easing="ease-in-sine" data-aos-duration="500">
           <img src={ElangFlores} alt="ElangFlores" className="elang-flores" />
           <div className="button-elang">
-            <Button title="Elang Flores" scientific="Nisaetus floris" />
+            <Button title="Elang Flores" scientific="Nisaetus floris" arrow={true}/>
           </div>
         </div>
       </ParallaxLayer>

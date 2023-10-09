@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "../../components/";
 import "./proses.css";
 
-import Bubble from "../../assets/process/Bubble.png";
+import Bubble from "../../assets/process/Bubble.webp";
 import { ParallaxLayer } from "@react-spring/parallax";
 
 const Proses = () => {

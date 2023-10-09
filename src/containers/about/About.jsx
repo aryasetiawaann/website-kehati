@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import "./about.css";
 import { Button } from "../../components";
-import Logo1 from "../../assets/about/Logo Partner.png";
-import Logo2 from "../../assets/about/Logo Partner-1.png";
-import Logo3 from "../../assets/about/Logo Partner-2.png";
-import Logo4 from "../../assets/about/Logo Partner-3.png";
-import Logo5 from "../../assets/about/Logo Partner-4.png";
-import Logo6 from "../../assets/about/Logo Partner-5.png";
-import Logo7 from "../../assets/about/image 5.png";
-import turtle from "../../assets/about/image 30.png";
-import icon1 from "../../assets/about/icon1.png";
-import icon2 from "../../assets/about/icon2.png";
+import Logo1 from "../../assets/about/Logo Partner.webp";
+import Logo2 from "../../assets/about/Logo Partner-2.webp";
+import Logo3 from "../../assets/about/Logo Partner-3.webp";
+import Logo4 from "../../assets/about/Logo Partner-4.webp";
+import Logo5 from "../../assets/about/Logo Partner-5.webp";
+import Logo6 from "../../assets/about/Logo Partner-6.webp";
+import Logo7 from "../../assets/about/Logo Partner-7.webp";
+import turtle from "../../assets/about/Turtle.webp";
+import icon1 from "../../assets/about/Icon1.webp";
+import icon2 from "../../assets/about/Icon2.webp";
 import { ParallaxLayer } from "@react-spring/parallax";
 
 const About = () => {
@@ -33,14 +33,16 @@ const About = () => {
             <img className="instantion-logo" src={Logo6} alt="logo" />
             <img className="instantion-logo" src={Logo7} alt="logo" />
           </div>
-          <ParallaxLayer offset={0} speed={-0.05} horizontal style={{ maxHeight: "100vh" }}>
-            <div className="about-turtle">
-              <img src={turtle} alt="turtle" />
-              <div className="about-card">
-                <Button title="Penyu Hijau" scientific="Chelonia Midas" />
+          <div className="about-parallax">
+            <ParallaxLayer offset={0} speed={-0.05} horizontal style={{ maxHeight: "100vh" }}>
+              <div className="about-turtle">
+                <img src={turtle} alt="turtle" />
+                <div className="about-card">
+                  <Button title="Penyu Hijau" scientific="Chelonia Midas" arrow={true} />
+                </div>
               </div>
-            </div>
-          </ParallaxLayer>
+            </ParallaxLayer>
+          </div>
         </div>
         {/* LEFT SECTION END */}
 

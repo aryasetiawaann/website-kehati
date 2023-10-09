@@ -1,8 +1,8 @@
 import React from "react";
 import "./footer.css";
 
-import Karang from "../../assets/footer/coral.png";
-import Turtle from "../../assets/footer/image 30.png";
+import Karang from "../../assets/footer/Coral.webp";
+import Turtle from "../../assets/footer/image 30.webp";
 import { BsArrowUpRight } from "react-icons/bs";
 
 const Footer = () => {

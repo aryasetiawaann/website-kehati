@@ -15,6 +15,7 @@
   align-items: center;
 }
 
+
 .process-title {
   font-size: 36px;
   font-weight: bold;
@@ -99,7 +100,7 @@
   .report .card {
     max-width: 100%;
     width: 353px;
-    height: fit-content;
+    height: 520px;
   }
 
   .bubble-container {

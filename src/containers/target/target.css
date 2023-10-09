@@ -30,16 +30,17 @@
   width: 500px;
 }
 
+.swiper-container {
+  padding-left: 30px;
+}
 
 #target-card {
-  width: 300px;
-  margin: 0 50px;
+  margin: 0 10px;
 }
 
 .swiper-padding {
   display: flex;
 }
-
 
 .swiper-button {
   display: flex;
@@ -57,7 +58,8 @@
   height: 24px;
 }
 
-.button-arrow-left, .button-arrow-right {
+.button-arrow-left,
+.button-arrow-right {
   border-radius: 40px;
   border: 1px solid #fff;
   display: flex;
@@ -117,20 +119,11 @@
   transform: translateX(-50%);
 }
 
+
+
+
 #card-mobile {
   display: none;
-}
-
-@media (max-width: 1300px) {
-  .bintang {
-    margin-top: 25em;
-  }
-}
-
-@media (max-width: 1200px){
-  .bintang {
-    margin-top: 5em;
-  }
 }
 
 @media (max-width: 900px) {
@@ -179,7 +172,7 @@
   .mySwiper {
     display: none;
   }
-  
+
   .swiper-slide {
     display: none;
   }
@@ -202,14 +195,20 @@
   }
 }
 
-@media screen and (max-height: 850px){
+/* @media screen and (max-height: 850px){
   .bintang{
     margin-top: 15em;
   }
+} */
+
+@media screen and (max-height: 700px) {
+  .bintang {
+    margin-top: 300px;
+  }
 }
 
-@media screen and (max-height: 700px){
-  .bintang{
-    margin-top: 25em;
+@media screen and (max-height: 500px) {
+  .bintang {
+    margin-top: 400px;
   }
 }

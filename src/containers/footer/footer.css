@@ -54,7 +54,7 @@
 .footer-info {
   display: flex;
   gap: 80px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .footer-contact {
@@ -73,10 +73,47 @@
 
 .footer-copyright {
   margin-top: 60px;
+  font-size: 14px;
 }
 
 hr {
   display: none;
+}
+
+@media screen and (max-width: 1650px) {
+  .footer-image {
+    width: 750px
+  }
+
+  .footer-karang {
+    width : 650px;
+  }
+
+  .footer-turtle {
+    width : 250px;
+  }
+
+  .footer-right {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .footer-image {
+    width: 650px
+  }
+
+  .footer-karang {
+    width : 550px;
+  }
+
+  .footer-turtle {
+    width : 200px;
+  }
+
+  .footer-right {
+    margin-left: 50px;
+  }
 }
 
 
@@ -101,7 +138,7 @@ hr {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .footer {
     display: flex;
     flex-direction: column;
