@@ -177,7 +177,7 @@ const Target = () => {
                 slidesPerView: 2.7,
               },
               1200: {
-                slidesPerView: 3.9,
+                slidesPerView: 3.3,
               },
 
               1300: {

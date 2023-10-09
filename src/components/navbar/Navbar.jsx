@@ -7,11 +7,12 @@ import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
   AOS.init({
     once: true,
   });
   return (
-    <div className="navbar" id="navbar" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="700">
+    <nav className="navbar" id="navbar" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="700">
       <div className="navbar-brand">
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="76" height="21" viewBox="0 0 76 21" fill="none">
@@ -64,7 +65,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 };
 
