@@ -311,8 +311,8 @@
   }
 
   .header-title {
-    margin-top: 18vh;
-    font-size: 35px;
+    margin-top: 15vh;
+    font-size: 29px;
   }
 
   .elang-flores,
@@ -342,7 +342,7 @@
 
 @media screen and (max-width: 350px) {
   .header-title {
-    margin-top: 19vh;
-    font-size: 30px;
+    margin-top: 15vh;
+    font-size: 25px;
   }
 }
