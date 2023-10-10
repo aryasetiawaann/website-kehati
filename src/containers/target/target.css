@@ -119,9 +119,6 @@
   transform: translateX(-50%);
 }
 
-
-
-
 #card-mobile {
   display: none;
 }
@@ -204,6 +201,10 @@
 @media screen and (max-height: 700px) {
   .bintang {
     margin-top: 300px;
+  }
+
+  .swiper-container {
+    padding-left: 0;
   }
 }
 

@@ -186,32 +186,32 @@
   }
 
   .header-background {
-    margin-top: -20vh;
+    margin-top: -7dvh;
   }
 
   .header-title {
-    margin-top: 16vh;
+    margin-top: 20dvh;
     font-size: 30px;
   }
 
   .komodo {
     width: 140%;
     flex-shrink: 0;
-    margin-top: 40vh;
+    margin-top: 40dvh;
   }
 
   .gradient {
-    margin-top: 85.6vh;
+    margin-top: 85.6dvh;
   }
 }
 
 @media screen and (max-width: 350px) {
   .header-title {
-    margin-top: 20vh;
+    margin-top: 20dvh;
     font-size: 25px;
   }
 
   .gradient {
-    margin-top: 85vh;
+    margin-top: 85.6dvh;
   }
 }
