@@ -54,11 +54,10 @@
   cursor: pointer;
 }
 
-@media  screen and (max-width: 1300px) {
-  .card{
-    width: 350px;
+@media screen and (max-width: 1300px) {
+  .card {
+    max-width: 350px;
     height: 600px;
+    padding: 10px 30px;
   }
-
 }
-

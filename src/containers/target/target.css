@@ -158,12 +158,11 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    /* background-color: black; */
   }
 
   .swiper-container {
     max-height: fit-content;
-    /* background-color: blue; */
+    padding-left: 0;
   }
 
   .mySwiper {
@@ -201,10 +200,6 @@
 @media screen and (max-height: 700px) {
   .bintang {
     margin-top: 300px;
-  }
-
-  .swiper-container {
-    padding-left: 0;
   }
 }
 

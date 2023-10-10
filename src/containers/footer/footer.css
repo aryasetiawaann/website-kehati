@@ -11,7 +11,7 @@
 
 .footer-hashtag h5 {
   color: #1e1e1e;
-  font-family: var(--font-footer);
+  font-family: var(--font-black);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 60px;
-  font-family: var(--font-footer);
+  font-family: var(--font-black);
 }
 
 .footer-image {
@@ -54,6 +54,10 @@
 .footer-info {
   display: flex;
   gap: 80px;
+}
+
+.footer-info h5,
+.footer-info p {
   font-size: 14px;
 }
 
@@ -74,6 +78,7 @@
 .footer-copyright {
   margin-top: 60px;
   font-size: 14px;
+  color: #333;
 }
 
 hr {
@@ -82,15 +87,15 @@ hr {
 
 @media screen and (max-width: 1650px) {
   .footer-image {
-    width: 750px
+    width: 750px;
   }
 
   .footer-karang {
-    width : 650px;
+    width: 650px;
   }
 
   .footer-turtle {
-    width : 250px;
+    width: 250px;
   }
 
   .footer-right {
@@ -100,43 +105,39 @@ hr {
 
 @media screen and (max-width: 1500px) {
   .footer-image {
-    width: 650px
+    width: 650px;
   }
 
   .footer-karang {
-    width : 550px;
+    width: 550px;
   }
 
   .footer-turtle {
-    width : 200px;
+    width: 200px;
   }
 
   .footer-right {
     margin-left: 50px;
   }
 }
-
 
 @media screen and (max-width: 1300px) {
   .footer-image {
-    width: 550px
+    width: 550px;
   }
 
   .footer-karang {
-    width : 500px;
+    width: 500px;
   }
 
   .footer-turtle {
-    width : 150px;
+    width: 150px;
   }
 
   .footer-right {
     margin-left: 50px;
   }
 }
-
-
-
 
 @media (max-width: 1100px) {
   .footer {
@@ -185,5 +186,3 @@ hr {
     margin-bottom: 32px;
   }
 }
-
-

@@ -11,6 +11,7 @@
 .process-content {
   display: flex;
   flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -41,17 +42,15 @@
 /* CARD SECTION START */
 .report {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 16px;
+  width: 100%;
   margin-top: 48px;
   position: relative;
   z-index: 1;
 }
 
-.report .card {
-  max-width: 28%;
-}
 /* CARD SECTION END */
 
 .bubble-container {
@@ -95,6 +94,7 @@
 
   .report {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .report .card {
