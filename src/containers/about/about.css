@@ -121,13 +121,11 @@
 @media screen and (max-width: 1700px) {
   .about-turtle {
     margin-top: 45px;
-    /* margin-right: 150px; */
   }
 }
 
 @media screen and (max-width: 1500px) {
   .about-turtle {
-    /* margin-top: 100px; */
     margin-right: 280px;
   }
 }
